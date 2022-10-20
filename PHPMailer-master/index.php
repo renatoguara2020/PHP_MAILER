@@ -19,15 +19,15 @@
     $mail->Port = 465; // or 587
     $mail->IsHTML(true);
     $mail->Username = "renatoguara2020@gmail.com";
-    $mail->Password = "agc";
+    $mail->Password = "ag";
     $mail->SetFrom("renatoguara2020@gmail.com");
     $mail->Subject = "PHP MAILER";
-    $mail->Body = "hello RENATO ALVES SOARES COM PHP MAILER";
-    $mail->AddAddress("renatoguara2020@outlook.com");
+    $mail->Body = "HELLO WORLD COM RENATO ALVES SOARES COM PHP MAILER";
+    $mail->AddAddress("renatoguara2020@gmail.com");
 
      if(!$mail->Send()) {
         echo "Mailer Error: " . $mail->ErrorInfo;
      } else {
-        echo "Message has been sent";
+        echo "<h1>Message has been sent to renatoguara2020</h1>";
      }
 ?>
